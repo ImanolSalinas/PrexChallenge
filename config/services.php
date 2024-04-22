@@ -24,6 +24,11 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'giphy' => [
+        'api_key' => env('GIPHY_API_KEY'),
+        'api_base_url' => env('GIPHY_API_BASE_URL', 'https://api.giphy.com/v1/gifs'),
+    ],
+
     'slack' => [
         'notifications' => [
             'bot_user_oauth_token' => env('SLACK_BOT_USER_OAUTH_TOKEN'),
